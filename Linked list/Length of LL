@@ -1,0 +1,12 @@
+int length(Node *head)
+{
+   
+    if(head == NULL) return 0;
+    Node * nextt = head;
+    int len = 0;
+    while(nextt != NULL){
+      nextt = nextt -> next;
+      len++;
+    }
+    return len;
+}
