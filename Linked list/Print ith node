@@ -1,0 +1,10 @@
+void printIthNode(Node *head, int i) {
+     int n = 0; 
+       while( n != i+1 && head != NULL ){
+           n++;
+           head = head->next;
+           if(n == i){
+               cout<<head-> data;
+           }
+       }
+}
