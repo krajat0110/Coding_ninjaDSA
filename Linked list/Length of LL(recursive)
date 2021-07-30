@@ -1,0 +1,7 @@
+int length(Node *head) {
+   if(head-> next  == NULL)
+        return 1;
+       
+    int len = length(head->next);
+        return (len + 1);
+}
