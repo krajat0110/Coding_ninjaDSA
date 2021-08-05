@@ -1,0 +1,8 @@
+
+int length(Node *head){
+    if(head == NULL){
+        return 0;
+    }
+int len = length(head -> next);
+return (1+len);
+}
